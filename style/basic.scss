@@ -1,0 +1,248 @@
+
+
+
+// color
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-darkgray: #6B6B6B;
+$color-gray:#D9D9D9;
+$color-blue: #D9EAF2;
+$color-heavyBlue: #86B6D3;
+$color-yellow: #FDF4E0;
+$color-brown: #C0B592;
+$color-brownRed: #C69C94;
+$color-pink: #F4E3DD;
+
+
+.color-white {
+    color: $color-white;
+}
+
+.color-black {
+    color: $color-black;
+}
+
+.color-darkgray {
+    color: $color-darkgray;
+}
+
+.color-gray {
+    color: $color-gray;
+}
+
+.color-blue {
+    color: $color-blue;
+}
+
+.color-heavyBlue {
+    color: $color-heavyBlue;
+}
+
+.color-brown {
+    color: $color-brown;
+}
+
+.color-brownRed {
+    color: $color-brownRed;
+}
+
+// fontSize
+
+h1,h2,h3,h4,h5,p,span {
+    font-family: 'Noto Sans TC','Overpass', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+}
+
+.fs-xxl {
+    font-size: 5em;
+    font-weight: 900;
+}
+.fs-xl {
+    font-size: 4.2em;
+    font-weight: 700;
+    
+}
+.fs-lg {
+    font-size: 3.6em;
+    font-weight: 500;
+}
+.fs-l {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.fs-d {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.fs-sm {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+p,a {
+    color: $color-darkgray;
+    margin: 0;
+    font-size: .8em;
+    font-weight: 300;
+}
+span {
+    font-size: .6em;
+    font-weight: 100;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
+
+// custom reset
+
+a {
+    text-decoration: none;
+    color: $color-black;
+}
+
+// layout
+
+
+    // width
+    $max: 21;
+    @for $i from 1 to $max {
+        .w-#{$i*5} {
+            width: ($i) * 5%;
+        }
+    }
+    // margin-bottom
+    $max: 30;
+    @for $i from 1 to $max {
+        .mb-#{$i*5} {
+            margin-bottom: ($i) * 5px;
+        }
+    }
+    // margin-top
+    $max: 30;
+    @for $i from 1 to $max {
+        .mt-#{$i*5} {
+            margin-top: ($i) * 5px;
+        }
+    }
+    // margin-right
+    $max: 30;
+    @for $i from 1 to $max {
+        .mr-#{$i*5} {
+            margin-right: ($i) * 5px;
+        }
+    }
+    // margin-left
+    $max: 30;
+    @for $i from 1 to $max {
+        .ml-#{$i*5} {
+            margin-left: ($i) * 5px;
+        }
+    }
+    // padding-bottom
+    $max: 30;
+    @for $i from 1 to $max {
+        .pb-#{$i*5} {
+            padding-bottom: ($i) * 5px;
+        }
+    }
+    // padding-top
+    $max: 30;
+    @for $i from 1 to $max {
+        .pt-#{$i*5} {
+            padding-top: ($i) * 5px;
+        }
+    }
+    // padding-right
+    $max: 30;
+    @for $i from 1 to $max {
+        .pr-#{$i*5} {
+            padding-right: ($i) * 5px;
+        }
+    }
+    // padding-left
+    $max: 30;
+    @for $i from 1 to $max {
+        .pl-#{$i*5} {
+            padding-left: ($i) * 5px;
+        }
+    }
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+
+.d-block {
+    display: block;
+}
+.d-inlineBlock {
+    display: inline-block;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+} 
+.justify-around {
+    justify-content:space-around;
+} 
+.justify-evenly {
+    justify-content:space-evenly;
+} 
+.align-top {
+    align-items: flex-start;
+}
+
+.direction-column {
+    flex-direction:column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.margin-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bottom {
+    width: 100%;
+    padding: 10px 0;
+    background-color: $color-blue;
+}
+
+
+

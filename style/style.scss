@@ -1,0 +1,495 @@
+@import 'reset';
+@import 'basic';
+
+body {
+    max-width: 1920px;
+    background: url(../images/bg.jpg) repeat ;
+    background-size: 25px;
+}
+
+.mainView {
+    width: 1670px;
+    position: relative;
+    // background-color: $color-brown;
+    height: 82vh;
+    margin: 0 auto 200px;
+}
+.mainView-2 {
+
+    margin:150px auto 200px;
+    width: 1670px;
+    position: relative;
+    // background-color: $color-brown;
+    height: 82vh;
+}
+
+
+.block {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 5%;
+    height: 55vw;
+}
+
+.cus-main-view {
+    height: 25vw;
+}
+
+
+.header {
+    padding: 0 5%;
+}
+
+.cus-navbar-link {
+    padding: 0 2%;
+    color: $color-darkgray;
+    font-weight: 500;
+}
+
+.cus-button {
+    box-sizing: border-box;
+    width: max-content;
+    display: block;
+    position: relative;
+    padding: 3% 6%;
+    margin-right:10px;
+    margin-left: 10px;
+    border:2px solid $color-black;
+    border-radius: 10px;
+
+    &::before {
+        content: '';
+        border-radius: 10px;
+        width: 100%;
+        height:100%;
+        position: absolute;
+        left: -2px;
+        top: 9px;
+        z-index: -2;
+    }
+    &:hover {
+        top: 5px;
+        &::before {
+            top: 2px;
+        }
+    }
+
+    &.noAnimate {
+        &:hover {
+            top: 0px;
+            &::before {
+                top: 9px;
+            }
+        }
+    }
+
+    &.margin-auto {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &.w100 {
+        width: 100%;
+    }
+
+    &.padding-content {
+        padding: 10px 13px;
+    }
+
+    &.blue {
+        background-color: $color-blue;
+        color: $color-black;
+        &::before {
+            background-color: $color-heavyBlue;
+            border:2px solid $color-black;
+        }
+    }
+
+    &.blueBg {
+        background-color: $color-heavyBlue;
+        color: $color-white;
+        &::before {
+            background-color: $color-heavyBlue;
+            border:2px solid $color-black;
+        }
+    }
+    &.blueBgWhite {
+        background-color: $color-white;
+        color: $color-black;
+        &::before {
+            background-color: $color-heavyBlue;
+            border:2px solid $color-black;
+        }
+    }
+    &.yellow {
+        background-color: $color-yellow;
+        color: $color-black;
+        &::before {
+            background-color: $color-brown;
+            border:2px solid $color-black;
+        }
+    }
+    &.yellowBgWhite {
+        background-color: $color-white;
+        color: $color-black;
+        &::before {
+            background-color: $color-brown;
+            border:2px solid $color-black;
+        }
+    }
+    &.brown {
+        background-color: $color-brown;
+        color: $color-white;
+        &::before {
+            background-color: $color-brown;
+            border:2px solid $color-black;
+        }
+    }
+    &.pink {
+        background-color: $color-white;
+        color: $color-black;
+        &::before {
+            background-color: $color-brownRed;
+            border:2px solid $color-black;
+        }
+    }
+    &.pinkBg {
+        background-color: $color-brownRed;
+        color: $color-white;
+        &::before {
+            background-color: $color-white;
+            border:2px solid $color-black;
+        }
+    }
+    &.yellowBg {
+        background-color: $color-brown;
+        color: $color-white;
+        &::before {
+            background-color: $color-white;
+            border:2px solid $color-black;
+        }
+    }
+    &.grayBgWhite {
+        background-color: $color-white;
+        color: $color-black;
+        &::before {
+            background-color: $color-darkgray;
+            border:2px solid $color-black;
+        }
+    }
+    &.lightGrayBgWhite {
+        background-color: $color-white;
+        color: $color-black;
+        &::before {
+            background-color: $color-gray;
+            border:2px solid $color-black;
+        }
+    }
+}
+
+.cus-button-s2 {
+    @extend .cus-button;
+    margin-right: auto;
+    margin-left: auto;
+    &::before {
+        left: 15px;
+        top: 15px;
+    }
+    &:hover {
+        top: 0;
+        &::before {
+            top: 15px;
+        }
+    }
+    .cus-button-tlt {
+        position: absolute;
+        top: -18%;
+        left: 29%;
+        &.long {
+            left: 39%;
+        }
+    }
+}
+
+
+// customer button
+
+.cus-subtitle {
+    position: absolute;
+    top: 26%;
+    left: 22%;
+    padding: 2% 3%;
+    &:hover {
+        top: 26%;
+    }
+
+    &::before {
+        top: 3px;
+    }
+}
+.cus-title {
+    position: absolute;
+    top: 41%;
+    left: 44%;
+    &:hover {
+        top: 41%;
+    }
+    &::before {
+        top: 3px;
+    }
+}
+
+.cus-b2-1 {
+    top: -12%;
+    &:hover {
+        top: -11%;
+    }
+    &::before {
+        top: 10px;
+    }
+}
+
+.cus-b2-2 {
+    left: 17%;
+    &::before {
+        top: 10px;
+    }
+}
+
+.cus-b2-3 {
+    top: 11%;
+    right: 17%;
+    &:hover {
+        top: 12%;
+    }
+    &::before {
+        top: 10px;
+    }
+}
+
+// line
+
+.line {
+    position: absolute;
+    z-index: -1;
+    &.line-1 {
+        top: 15%;
+        left: 5%;
+    }
+    &.line-2 {
+        top: 24%;
+        right: 3%;
+    }
+    &.line-3 {
+        bottom: 8%;
+        left: 19%;
+    }
+    &.line-4 {
+        top: -3%;
+        right: 25%;
+    }
+    &.line-5 {
+        top: 51%;
+        right: 43%;
+    }
+    &.line-6 {
+        bottom: -3%;
+        right: 34%;
+    }
+}
+
+
+// icon
+
+.cus-icon {
+    text-align: center;
+    position: absolute;
+    background-color: $color-white;
+    width: max-content;
+    display: block;
+    padding: 10px 10px;
+    border: 1px solid $color-darkgray;
+    border-radius: 10px;
+    &.icon-css {
+        top: 9%;
+        left: 3%;
+    }
+    &.icon-figma {
+        bottom: 10%;
+        left: 16.5%;
+    }
+    &.icon-js {
+        top: 64%;
+        right: 1%;
+    }
+    &.icon-adobe {
+        top: 19%;
+        right: 11%;
+    }
+    &.icon-html {
+        top: 35%;
+        right: 20%;
+    }
+    &.icon-animate {
+        padding: 5px 5px;
+        background-color: $color-brown;
+        border: none;
+        right: 23%;
+        top: -7%;
+    }
+    &.icon-idea {
+        padding: 5px 5px;
+        background-color: $color-heavyBlue;
+        border: none;
+        left: 47%;
+        top: 47%;
+    
+    }
+    &.icon-tree {
+        padding: 5px 5px;
+        background-color: $color-brownRed;
+        border: none;
+        bottom: -6%;
+        right: 56%;
+    }
+}
+
+
+// customer-element
+
+.cus-countBar {
+    position: absolute;
+    bottom: -9%;
+    left: 10%;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.cus-countItem {
+    width: 33.333%;
+    text-align: center;
+    &:nth-child(2) {
+        border-right: 1px solid $color-black;
+        border-left: 1px solid $color-black;
+    }
+}
+
+
+
+
+.cus-bubble {
+    width: 30%;
+    padding: 15% 0;
+    text-align: center;
+    border-radius: 10px;
+    background: url(../images/b4/bg-card.png) no-repeat;
+    background-size: contain;
+    &.card-1 {
+        background-color: $color-heavyBlue;
+    }
+    &.card-2 {
+        background-color: $color-brown;
+    }
+    &.card-3 {
+        background-color: $color-brownRed;
+    }
+}
+
+.cus-card {
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+    width: 30%;
+    padding: 20% 0;
+    text-align: center;
+    border-radius: 10px;
+    .card-content {
+        border-radius: 10px;
+        position: absolute;
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+        top: 5%;
+        left: 5%;
+    }
+    &.card-1 {
+        background-color: $color-blue;
+    }
+    &.card-2 {
+        background-color: $color-yellow;
+    }
+    &.card-3 {
+        background-color: $color-pink;
+    }
+    &:hover {
+        transition: .2s;
+        transform:skewY(3deg)
+    }
+}
+
+.cus-text-bg {
+    padding: 4px 8px;
+    &.blue {
+        background-color: $color-blue;
+    }
+    &.yellow {
+        background-color: $color-yellow;
+    }
+    &.pink {
+        background-color: $color-pink;
+    }
+    &.gray {
+        background-color: $color-gray;
+    }
+}
+
+
+.cus-loop {
+    img {
+        width: 10%;
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+.cus-teacher {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .cus-button:nth-child(odd) {
+        left: 50%;
+    }
+}
+
+.cus-assign {
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+.gate-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    .gate {
+        position: absolute;
+        width: 50%;
+        &.left-1 {
+            left: 2%;
+            top: 100%;
+        }
+        &.right-1 {
+            right: 2%;
+            bottom: 100%;
+        }
+    }
+}
